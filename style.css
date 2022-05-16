@@ -16,10 +16,11 @@ form {
 
 body{
     
-    background-color: darkgray;
+    
     justify-content: left;
 }
 lauta{
+    background-color: darkgray;
     display: flex;
 }
 .producto{
