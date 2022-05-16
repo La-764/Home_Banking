@@ -20,7 +20,7 @@ body{
     justify-content: left;
 }
 lauta{
-    background-color: darkgray;
+    background-color: gainsboro;
     display: flex;
 }
 .producto{
