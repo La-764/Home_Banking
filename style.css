@@ -1,0 +1,15 @@
+li {
+    display:inline;
+    
+}
+
+h1 {
+    text-align: center;
+}
+form {
+    text-align: right;
+}
+.nav_prin {
+    display: inline;
+    text-align: center;
+}
