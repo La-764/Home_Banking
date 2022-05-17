@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
+}
+
+.container {
+  background-color: blue;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.container-left-side {
+  background-color: darkorange;
+  width: 100%;
+}
+
+.title {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container-right-side {
+  background-color: red;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.container-form {
+  background-color: #fff;
+  padding: 10px;
+}
+
+.container-input {
+  display: flex;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+input[type="text"], 
+input[type="password"], 
+input[type="number"] {
+  height: 20px;
+  border: none;
+  border-bottom: 1px solid #999;
+  padding: 10px;
+  margin-bottom:20px;
+  font-size: 16px;
+  width: 100%;
+  outline: none;
+}
+
+input[type="text"] :focus, 
+input[type="password"] :focus,
+input[type="number"] :focus {
+  border-bottom: 1px solid red;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100%;
+}
