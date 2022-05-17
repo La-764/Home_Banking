@@ -60,9 +60,9 @@ input[type="number"] :focus {
 }
 
 input[type="submit"] {
-  background-color: #4CAF50;
-  border: none;
-  color: white;
+  background-color: #fff;
+  border: 1px solid #4CAF50;
+  color: #333;
   padding: 10px;
   text-align: center;
   text-decoration: none;
@@ -70,5 +70,14 @@ input[type="submit"] {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  width: 100%;
+  width: 30%;
+  border-radius: 20px;
+  transition: ease-in 200ms all;
+  font-weight: bold;
+}
+
+input[type="submit"]:hover {
+  background-color: #61e365;
+  border: 1px solid #fff;
+  color: #fff;
 }
