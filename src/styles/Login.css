@@ -56,12 +56,12 @@ input[type="number"] {
 input[type="text"] :focus, 
 input[type="password"] :focus,
 input[type="number"] :focus {
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #005689;
 }
 
 input[type="submit"] {
   background-color: #fff;
-  border: 1px solid #4CAF50;
+  border: 1px solid #005689;
   color: #333;
   padding: 10px;
   text-align: center;
@@ -71,13 +71,13 @@ input[type="submit"] {
   margin: 4px 2px;
   cursor: pointer;
   width: 30%;
-  border-radius: 20px;
   transition: ease-in 200ms all;
   font-weight: bold;
 }
 
 input[type="submit"]:hover {
-  background-color: #61e365;
+  border-radius: 10px;
+  background-color: #005689;
   border: 1px solid #fff;
   color: #fff;
 }
