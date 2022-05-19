@@ -16,7 +16,7 @@ form {
 
 body{
     
-    
+    padding-top: 50px;
     justify-content: left;
 }
 Rochi{
@@ -78,3 +78,19 @@ lauta{
 .btn:hover:before{
     height: 100%;
 }
+
+
+.navbar-brand {
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+}
+
+.icons i {
+    color: #fff;
+}
+
+.icons i:hover {
+    color: rgba(255, 255, 255, 0.87);
+}
+
