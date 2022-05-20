@@ -10,10 +10,6 @@ body {
   align-items: center;
 }
 
-.container-all { 
-  align-items: center;
-}
-
 .title, .welcome-title {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
