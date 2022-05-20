@@ -4,33 +4,16 @@ body {
   box-sizing: border-box;
 }
 
-.header-left-side {
+.logo {
   background-color: #fff;
-}
-
-.container {
-  height: 80vh;
-  display: grid;
-  padding-left: 50px;
-  padding-right: 50px;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-
-img {
-  width: 100%;
-  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .title, .welcome-title {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
   color: #005689;
-}
-
-.container-right-side {
-  padding-right: 40px;
-  padding-left: 40px;
 }
 
 .container-form {
@@ -51,10 +34,9 @@ input[type="number"] {
   height: 20px;
   border: none;
   border-bottom: 1px solid #999;
-  padding: 10px;
   margin-bottom:20px;
   font-size: 16px;
-  width: 75%;
+  width: 80%;
   outline: none;
 }
 
@@ -75,7 +57,7 @@ input[type="submit"] {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  width: 30%;
+  width: 25%;
   transition: ease-in 200ms all;
   font-weight: bold;
 }
