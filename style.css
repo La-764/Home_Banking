@@ -105,20 +105,21 @@ lauta{
     color: rgba(255, 255, 255, 0.87);
 }
 
-
-.grid_header {
-    font-weight: bold;
-}
-
-
 div.footer {
     padding-bottom: 40px;
     padding-left: 30px;
+    padding-top: 10px;
 }
 
 div.primera-columna-footer {
     color: grey;
     font-style: italic;
+}
+
+@media screen and (max-width:576px){
+    div.footer{
+        text-align: center;
+    }
 }
 
 .grid-header {
