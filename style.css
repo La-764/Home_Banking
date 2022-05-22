@@ -163,3 +163,33 @@ div.primera-columna-footer {
     pointer-events: none;
     cursor: default
 }
+/*Estilo Noticias*/
+.noticias {
+    padding: 10px 8px 3px 8px;
+    background-color: #dddddd;
+    border: 1px solid #005689;
+    border-radius: 10px;
+    
+}
+.noticias hr {
+    color: #005689;
+}
+.noticias .card{
+    border-radius: 10px;
+    border: 1px solid #1464f6;
+    margin-bottom: 7px;
+}
+.noticias h2 {
+    color: #44a2f8;
+}
+.noticias .card-body a {
+    color: #44a2f8;
+    text-decoration: none;
+}
+.noticias .card-body a:hover {
+    color: #005689;
+}
+.noticias img {
+    min-width: 130px;
+    max-width: 200px;
+}
