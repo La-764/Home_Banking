@@ -18,9 +18,9 @@ form {
 }
 
 body{
+    
     padding-top: 50px;
     justify-content: left;
-    justify-content: flex-start;
 }
 Rochi{
     background-color: gainsboro;
@@ -36,14 +36,11 @@ lauta{
     font-weight: 600;
     font-size: 100%;
     margin-left: 20px;
-    font-size: 20px;
-    margin: 10px;
 }
 .titulo{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     font-size: 17px;
-    font-size: 15px;
 }
 .subt{
     font-family: Arial, Helvetica, sans-serif;
@@ -57,16 +54,6 @@ lauta{
 .col .btn{
     display: block;
     width: 220px;
-}
-
-.container{
-    display: grid;
-    justify-content: space-between;
-    margin: 2px;
-}
-.col .btn{
-    display: grid;
-    width: 170px;
     height: 170px;
     outline: none;
     border: 1px solid cornflowerblue;
@@ -74,8 +61,7 @@ lauta{
     border-radius: 6px;
     color: rgb(0, 141, 235);
     cursor: pointer;
-    margin: 5px;
-    padding: 17px;
+    margin: 10px;
     transition: all .25s;
     z-index: 1;
     position: relative;
@@ -119,12 +105,6 @@ lauta{
     color: rgba(255, 255, 255, 0.87);
 }
 
-
-.grid_header {
-    font-weight: bold;
-}
-
-
 div.footer {
     padding-bottom: 40px;
     padding-left: 30px;
@@ -134,6 +114,12 @@ div.footer {
 div.primera-columna-footer {
     color: grey;
     font-style: italic;
+}
+
+@media screen and (max-width:576px){
+    div.footer{
+        text-align: center;
+    }
 }
 
 .grid-header {

@@ -4,13 +4,65 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../La-764-entrega-sprint-1/public/images/logo.ico">
+  <link rel="stylesheet" href="style.css">
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
   <title>ITBank</title>
 </head>
 <body>
     <!-- encabezado principal  -->
+
+    <header>
+      
+      <nav class="navbar fixed-top navbar-dark" style="background-color: #005689;">
+        <div class="container-fluid">
+      
+          <a class="navbar-brand" href="#">
+            <img src="../La-764-entrega-sprint-1/public/images/logo_resized.jpg" width="130px" alt="logo" class="inline-block align-middle mr-2">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar" style="color: #fff;">
+            <span class="navbar-toggler-icon">
+            </span>
+          </button>
+          <div class="icons">
+            <a href="#"><i class="bi bi-bell icon-white h3" style="padding-right: 10px;"></i></a>
+            <a href="#"><i class="bi bi-power icon-white h2"></i></a>
+          </div>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel"
+            style="background-color: #005689;">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color:#fff">Bienvenid@</h5>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Administrar Cuenta</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Soporte</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Cerrar Sesión</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+      <h1>ITBANK</h1>
+    
+    </header>
+    <!-- contenido principal de la pag -->
+    <!-- encabezado principal  -->
+
     <header class="my-3">
       <nav class="navbar fixed-top navbar-dark" style="background-color: #005689;">
         <div class="container-fluid">
@@ -98,7 +150,9 @@
       </nav>    
     </header>
     <!-- contenido principal de la pag -->
+  
       <main>
+        
         <div class="container">
           <h3 class="acceso_directos">ACCESOS DIRECTOS</h3>
           <Rochi>
@@ -137,73 +191,52 @@
               </svg>
             </button>
           </Rochi>
+ 
+
         </div>
         <h2 class="producto">TUS PRODUCTOS</h2>
         <lauta>
-          <div class="container">
+          <div class="cont">
             <div class="row">
               <div class="col"><button class="btn">
-                <p class="titulo">Cuenta nºxxxxxxxxx</p>
+                <p class="titulo">Cuenta nºxxxxxxx</p>
                 <p>$0,00</p>
                 <p>U$s0,00</p>
-            </button></div>
-              <div class="col"><button class="btn">
-                <p class="titulo">Visa Crédito xxxx-1234</p>
-                <p class="subt" > últimos consumos</p>
-                <p>$0,00</p>
-            </button></div>
-              <div class="col"><button class="btn">
-                <p class="titulo">Visa Débito</p>
-                <p class="subt">Ver movimientos</p>
-            </button></div>
-            </div>
-          </div>   
-      <!-- Contiene un articulo -->
-      <article>
-        <h2>Título del artículo</h2>
+                </button></div>
+                <div class="col"><button class="btn">
+                    <p class="titulo">Visa Crédito xxxx-1234</p>
+                    <p class="subt" > últimos consumos</p>
+                    <p>$0,00</p>
+                </button></div>
+                 <div class="col"><button class="btn">
+                        <p class="titulo">Visa Débito</p>
+                        <p class="subt">Ver movimientos</p>
+                  </button></div>    
+                  <div class="col"><button class="btn">
+                      <p class="titulo">Inversiones</p>
+                      <p class="subt">Tenencia consolidada</p>
+                  </button></div>
+                  <div class="col"><button class="btn">
+                      <p class="titulo">Autenticación</p>
+                      <p class="subt">Generar Token</p>
+                            </button></div>
+    </lauta>
+      
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</p>
-
-        <h3>Subsección</h3>
-
-        <p>Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.</p>
-
-        <p>Pelientesque auctor nisi id magna consequat sagittis. Curabitur dapibus, enim sit amet elit pharetra tincidunt feugiat nist imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.</p>
-
-        <h3>Otra subsección</h3>
-
-        <p>Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum soclis natoque penatibus et manis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p>
-
-        <p>Vivamus fermentum semper porta. Nunc diam velit, adipscing ut tristique vitae sagittis vel odio. Maecenas convallis ullamcorper ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, is fringille sem nunc vet mi.</p>
-      </article>
-
-      <!-- el contenido aparte se anida dentro del contenido principal -->
-      <aside>
-        <h2>Relacionado</h2>
-
-        <ul>
-          <li><a href="#">Oh, me gusta estar junto al mar</a></li>
-          <li><a href="#">Oh, me gusta estar junto al mar</a></li>
-          <li><a href="#">Aunque en el norte de Inglaterra</a></li>
-          <li><a href="#">Nunca deja de llover</a></li>
-          <li><a href="#">Oh, bueno...</a></li>
-        </ul>
-      </aside>
     </main>
-
     <!--  pie de página principal -->
 
     <footer>
       <div class="row footer">
         <div class="col-sm-5 primera-columna-footer">
-          <div class="grid-header"> <img src="public/images/itbank-logo.png"> </div>
+          <div class="grid-header"> <img src=public/images/itbank-logo.png> </div>
           <div>San Martin 202, C1004AAB, Puerto Madero, Ciudad Autónoma de Buenos Aires</div>
           <div>Abiertos de 10:00 a 15:00, de lunes a viernes</div>
           <div>©Copyright 2050 de nadie. Todos los derechos revertidos</div>
         </div>
         <div class="col-sm-2">
           <div>
-            <div class="grid-header">Servicio al cliente</div>
+            <div class="grid-header">Servico al cliente</div>
             <div><a href="">FAQ</a></div>
             <div><a href="">Ayuda</a></div>
             <div><a href="">Trabajá con nosotros</a></div>
@@ -212,7 +245,7 @@
         </div>
         <div class="col-sm-2">
           <div class="grid-header"><a href=""></a>Información</div>
-          <div class="text-and_link"><a href="">Términos y condiciones</a></div>
+          <div class="text-and_link"><a href="">Terminos y condiciones</a></div>
           <div><a href="">Privacidad</a></div>
           <div><a href="">Seguridad</a></div>
           <div><a href="">Sobre nosotros</a></div>
@@ -229,8 +262,7 @@
         </div>
       </div>
     </footer>
-<!-- JavaScript Bundle with Popper -->
+    <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>
-</html>
 </html>
