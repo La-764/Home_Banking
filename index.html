@@ -4,24 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../La-764-entrega-sprint-1/public/images/logo.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <link rel="icon" href="public/images/logo.ico">
     <link rel="stylesheet" href="style.css">
-    <!-- CSS only -->
     
 <title>ITBank</title>
 </head>
 <body>
     <!-- encabezado principal  -->
 
-    <header>
-      
+    <header class="my-3">
       <nav class="navbar fixed-top navbar-dark" style="background-color: #005689;">
         <div class="container-fluid">
       
           <a class="navbar-brand" href="#">
-            <img src="../La-764-entrega-sprint-1/public/images/logo_resized.jpg" width="130px" alt="logo" class="inline-block align-middle mr-2">
+            <img src="public/images/logo_resized.jpg" width="130px" alt="logo" class="inline-block align-middle mr-2">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
             aria-controls="offcanvasNavbar" style="color: #fff;">
@@ -56,10 +54,7 @@
             </div>
           </div>
         </div>
-      </nav>
-      
-      <h1>ITBANK</h1>
-    
+      </nav>    
     </header>
     <!-- contenido principal de la pag -->
   
@@ -133,44 +128,47 @@
                       <p class="subt">Generar Token</p>
                             </button></div>
     </lauta>
-      <!-- Contiene un articulo -->
-      <article>
-        <h2>Título del artículo</h2>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</p>
-
-        <h3>Subsección</h3>
-
-        <p>Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.</p>
-
-        <p>Pelientesque auctor nisi id magna consequat sagittis. Curabitur dapibus, enim sit amet elit pharetra tincidunt feugiat nist imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.</p>
-
-        <h3>Otra subsección</h3>
-
-        <p>Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum soclis natoque penatibus et manis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p>
-
-        <p>Vivamus fermentum semper porta. Nunc diam velit, adipscing ut tristique vitae sagittis vel odio. Maecenas convallis ullamcorper ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, is fringille sem nunc vet mi.</p>
-      </article>
-
-      <!-- el contenido aparte se anida dentro del contenido principal -->
-      <aside>
-        <h2>Relacionado</h2>
-
-        <ul>
-          <li><a href="#">Oh, me gusta estar junto al mar</a></li>
-          <li><a href="#">Oh, me gusta estar junto al mar</a></li>
-          <li><a href="#">Aunque en el norte de Inglaterra</a></li>
-          <li><a href="#">Nunca deja de llover</a></li>
-          <li><a href="#">Oh, bueno...</a></li>
-        </ul>
-      </aside>
+      
 
     </main>
 
     <!--  pie de página principal -->
 
     <footer>
-      <p>©Copyright 2050 de nadie. Todos los derechos revertidos.</p>
+      <div class="row footer">
+        <div class="col-sm-5 primera-columna-footer">
+          <div class="grid-header"> <img src="public/images/itbank-logo.png"> </div>
+          <div>San Martin 202, C1004AAB, Puerto Madero, Ciudad Autónoma de Buenos Aires</div>
+          <div>Abiertos de 10:00 a 15:00, de lunes a viernes</div>
+          <div>©Copyright 2050 de nadie. Todos los derechos revertidos</div>
+        </div>
+        <div class="col-sm-2">
+          <div>
+            <div class="grid-header">Servicio al cliente</div>
+            <div><a href="">FAQ</a></div>
+            <div><a href="">Ayuda</a></div>
+            <div><a href="">Trabajá con nosotros</a></div>
+            <div><a href="">Reportar errores</a></div>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="grid-header"><a href=""></a>Información</div>
+          <div class="text-and_link"><a href="">Términos y condiciones</a></div>
+          <div><a href="">Privacidad</a></div>
+          <div><a href="">Seguridad</a></div>
+          <div><a href="">Sobre nosotros</a></div>
+        </div>
+        <div class="col-sm-2">
+          <div class="grid-header">Formas de contacto</div>
+          <div class="box">
+            <!--agregar popover con el número de contacto y en mail en estas fotos--> <a href=""><i class="bi bi-telephone h3" style="padding-right: 5px"></i></a> <a href=""><i class="bi bi-envelope h3"></i></a>
+          </div>
+          <div class="box"><a href=https://www.instagram.com/itbauniversidad><i class="bi bi-instagram h3" style="padding-right: 10px"></i></a><a
+              href=https://twitter.com/ITBA><i class="bi bi-twitter h3"></i></a></div>
+          <div class="box"><a href=https://es-la.facebook.com/itbauniversidad><i class="bi bi-facebook h3" style="padding-right: 10px"></i></a><a
+              href=https://www.youtube.com/channel/UCk7TR5Oxi3h63uzCpG3rC6w><i class="bi bi-youtube h3"></i></a></div>
+        </div>
+      </div>
     </footer>
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
