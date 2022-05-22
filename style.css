@@ -1,6 +1,5 @@
 li {
     display:inline;
-    
 }
 
 h1 {
@@ -32,17 +31,25 @@ lauta{
     color: rgb(73, 73, 73);
     font-weight: 600;
     font-size: 100%;
+    margin-left: 20px;
 }
 .titulo{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
+    font-size: 17px;
 }
 .subt{
     font-family: Arial, Helvetica, sans-serif;
 }
-.btn{
+.cont{
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    
+}
+.col .btn{
     display: block;
-    width: 170px;
+    width: 220px;
     height: 170px;
     outline: none;
     border: 1px solid cornflowerblue;
@@ -57,7 +64,7 @@ lauta{
     text-align: center;
 }
 
-.btn:before{
+.col .btn:before{
     content: '';
     position: absolute;
     width: 100%;
@@ -70,12 +77,12 @@ lauta{
     z-index: -1;
 }
 
-.btn:hover{
+.col .btn:hover{
     border: 1px solid transparent;
     color: #fff;
 }
 
-.btn:hover:before{
+.col .btn:hover:before{
     height: 100%;
 }
 
