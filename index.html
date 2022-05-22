@@ -30,6 +30,7 @@
             <a href="#"><i class="bi bi-bell icon-white h3" style="padding-right: 10px;"></i></a>
             <a href="#"><i class="bi bi-power icon-white h2"></i></a>
           </div>
+          <!--  Menu hambuerguesa -->
           <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel"
             style="background-color: #005689;">
             <div class="offcanvas-header">
@@ -39,16 +40,59 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house"></i> Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Administrar Cuenta</a>
+                  <a class="nav-link" href="#"><i class="bi bi-person"></i> Administrar Cuenta</a>
+                </li>                              
+                <li class="nav-item dropdown"> 
+                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-globe2"></i> Idioma
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                    <li><a class="dropdown-item" href="#">Español</a></li>
+                    <li><a class="dropdown-item" href="#">English</a></li>
+                    <li><a class="dropdown-item" href="#">Português</a></li>
+                    <li><a class="dropdown-item" href="#">Français</a></li>
+                    <li><a class="dropdown-item" href="#">Deutsch</a></li>                  
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-gear"></i> Accesibilidad
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                    <li><a class="dropdown-item disab" href="#">Modo Oscuro</a></li>
+                    <li>
+                      <div class="form-check form-switch ms-auto mt-3 me-3" style="padding-left: 4em; padding-bottom: 5px;">
+                        <label class="form-check-label ms-3" for="lightSwitch">
+                          <i class="bi bi-moon-fill"></i>
+                        </label>
+                        <input class="form-check-input" type="checkbox" id="lightSwitch" />
+                      </div>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item disab" href="#">Tamaño de Fuente</a></li>
+                    <li><label for="customRange1" class="form-label"></label>
+                      <input type="range" class="form-range" id="customRange1">
+                        <i class="bi bi-plus-slash-minus" style="padding-left:3px;"></i>
+                    </li>                   
+                  </ul>
+                </li>
+                <li class="nav-item dropdown"> 
+                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-question-circle"></i> Soporte
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                    <li><a class="dropdown-item" href="#">Preguntas Frecuentes</a></li>
+                    <li><a class="dropdown-item" href="#">Asistencia en Vivo</a></li>
+                    <li><a class="dropdown-item" href="#">Contacto Soporte</a></li>
+                  </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Soporte</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Cerrar Sesión</a>
+                  <a class="nav-link" href="#"><i class="bi bi-power"></i> Cerrar Sesión</a>
                 </li>
               </ul>
             </div>
