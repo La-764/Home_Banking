@@ -1,83 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
-    <link rel="icon" href="public/images/logo.ico">
-    <link rel="stylesheet" href="style.css">
-<title>ITBank</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+  <link rel="icon" href="public/images/logo.ico">
+  <link rel="stylesheet" href="style.css">
+  <title>ITBank</title>
 </head>
 
 <body>
-    <!-- encabezado principal  -->
+  <!-- encabezado principal  -->
 
-    <header>
-      
-      <nav class="navbar fixed-top navbar-dark" style="background-color: #005689;">
-        <div class="container-fluid">
-      
-          <a class="navbar-brand" href="#">
-            <img src="../La-764-entrega-sprint-1/public/images/logo_resized.jpg" width="130px" alt="logo" class="inline-block align-middle mr-2">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar" style="color: #fff;">
-            <span class="navbar-toggler-icon">
-            </span>
-          </button>
-          <div class="icons">
-            <a href="#"><i class="bi bi-bell icon-white h3" style="padding-right: 10px;"></i></a>
-            <a href="#"><i class="bi bi-power icon-white h2"></i></a>
+  <header>
+
+    <nav class="navbar fixed-top navbar-dark" style="background-color: #005689;">
+      <div class="container-fluid">
+
+        <a class="navbar-brand" href="#">
+          <img src="../La-764-entrega-sprint-1/public/images/logo_resized.jpg" width="130px" alt="logo"
+            class="inline-block align-middle mr-2">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" style="color: #fff;">
+          <span class="navbar-toggler-icon">
+          </span>
+        </button>
+        <div class="icons">
+          <a href="#"><i class="bi bi-bell icon-white h3" style="padding-right: 10px;"></i></a>
+          <a href="#"><i class="bi bi-power icon-white h2"></i></a>
+        </div>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel"
+          style="background-color: #005689;">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color:#fff">Bienvenid@</h5>
           </div>
-          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel"
-            style="background-color: #005689;">
-            <div class="offcanvas-header">
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color:#fff">Bienvenid@</h5>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Administrar Cuenta</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Soporte</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Cerrar Sesión</a>
-                </li>
-              </ul>
-            </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Administrar Cuenta</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Soporte</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Cerrar Sesión</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </nav>
-      
-      <h1>ITBANK</h1>
-    
-    </header>
-    <!-- contenido principal de la pag -->
-    <!-- encabezado principal  -->
+      </div>
+    </nav>
 
-    <header class="my-3">
-      <nav class="navbar fixed-top navbar-dark" style="background-color: #005689;">
-        <div class="container-fluid">
-      
-          <a class="navbar-brand" href="#">
-            <img src="public/images/logo_resized.jpg" width="130px" alt="logo" class="inline-block align-middle mr-2">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar" style="color: #fff;">
-            <span class="navbar-toggler-icon">
-            </span>
-          </button>
-          <div class="icons">
-            <a href="#"><i class="bi bi-bell icon-white h3" style="padding-right: 10px;"></i></a>
-            <a href="#"><i class="bi bi-power icon-white h2"></i></a>
+    <h1>ITBANK</h1>
+
+  </header>
+  <!-- contenido principal de la pag -->
+  <!-- encabezado principal  -->
+
+  <header class="my-3">
+    <nav class="navbar fixed-top navbar-dark" style="background-color: #005689;">
+      <div class="container-fluid">
+
+        <a class="navbar-brand" href="#">
+          <img src="public/images/logo_resized.jpg" width="130px" alt="logo" class="inline-block align-middle mr-2">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" style="color: #fff;">
+          <span class="navbar-toggler-icon">
+          </span>
+        </button>
+        <div class="icons">
+          <a href="#"><i class="bi bi-bell icon-white h3" style="padding-right: 10px;"></i></a>
+          <a href="#"><i class="bi bi-power icon-white h2"></i></a>
+        </div>
+        <!--  Menu hambuerguesa -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel"
+          style="background-color: #005689;">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color:#fff">Bienvenid@</h5>
           </div>
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
@@ -150,7 +160,6 @@
 
   <main>
     <div class="row p-3">
-      <!--columna para accesos directos y productos -->
       <div class="col-12 col-md-9">
         <div class="container">
           <h3 class="acceso_directos">ACCESOS DIRECTOS</h3>
@@ -202,8 +211,9 @@
               </svg>
             </button>
           </Rochi>
-        </div>
 
+
+        </div>
         <h2 class="producto">TUS PRODUCTOS</h2>
         <lauta>
           <div class="cont">
@@ -218,67 +228,147 @@
                   <p class="subt"> últimos consumos</p>
                   <p>$0,00</p>
                 </button></div>
-                 <div class="col"><button class="btn">
-                        <p class="titulo">Visa Débito</p>
-                        <p class="subt">Ver movimientos</p>
-                  </button></div>    
-                  <div class="col"><button class="btn">
-                      <p class="titulo">Inversiones</p>
-                      <p class="subt">Tenencia consolidada</p>
-                  </button></div>
-                  <div class="col"><button class="btn">
-                      <p class="titulo">Autenticación</p>
-                      <p class="subt">Generar Token</p>
-                            </button></div>
-    </lauta>
-      
-
-    </main>
-    <!--  pie de página principal -->
-
-    <footer>
-      <div class="row footer">
-        <div class="col-sm-5 primera-columna-footer">
-          <div class="grid-header"> <img src=public/images/itbank-logo.png> </div>
-          <div>San Martin 202, C1004AAB, Puerto Madero, Ciudad Autónoma de Buenos Aires</div>
-          <div>Abiertos de 10:00 a 15:00, de lunes a viernes</div>
-          <div>©Copyright 2050 de nadie. Todos los derechos revertidos</div>
-        </div>
-        <div class="col-sm-2">
-          <div>
-            <div class="grid-header">Servico al cliente</div>
-            <div><a href="">FAQ</a></div>
-            <div><a href="">Ayuda</a></div>
-            <div><a href="">Trabajá con nosotros</a></div>
-            <div><a href="">Reportar errores</a></div>
+              <div class="col"><button class="btn">
+                  <p class="titulo">Visa Débito</p>
+                  <p class="subt">Ver movimientos</p>
+                </button></div>
+              <div class="col"><button class="btn">
+                  <p class="titulo">Inversiones</p>
+                  <p class="subt">Tenencia consolidada</p>
+                </button></div>
+              <div class="col"><button class="btn">
+                  <p class="titulo">Autenticación</p>
+                  <p class="subt">Generar Token</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </lauta>
+      </div>
+      <!--columna para sección noticias-->
+      <div class="col-12 col-md-3 noticias">
+        <!--Título-->
+        <h2>Noticias</h2>
+        <hr>
+        <!--Tarjeta-->
+        <div class="card">
+          <div class="card-body">
+            <!--Título Tarjeta-->
+            <a href="#">
+              <h5 class="card-title">Noticia 1</h5>
+            </a>
+            <div class="row">
+              <div class="col">
+                <!--Descripción Noticia-->
+                <p class="card-text">Breve descripción de la noticia.
+                  Para leer la noticia completa se debe hacer click
+                  sobre el título</p>
+              </div>
+              <div class="col">
+                <!--Imagen-->
+                <img src="public/images/imagen.png" class="card-img-top" alt="imagen">
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-sm-2">
-          <div class="grid-header"><a href=""></a>Información</div>
-          <div class="text-and_link"><a href="">Terminos y condiciones</a></div>
-          <div><a href="">Privacidad</a></div>
-          <div><a href="">Seguridad</a></div>
-          <div><a href="">Sobre nosotros</a></div>
-        </div>
-        <div class="col-sm-2">
-          <div class="grid-header">Formas de contacto</div>
-          <div class="box">
-            <!--agregar popover con el número de contacto y en mail en estas fotos-->
-            <a href=""><i class="bi bi-telephone h3" style="padding-right: 5px"></i></a>
-            <a href=""><i class="bi bi-envelope h3"></i></a>
+        <!--Tarjeta-->
+        <div class="card">
+          <div class="card-body">
+            <!--Título Tarjeta-->
+            <a href="#">
+              <h5 class="card-title">Noticia 2</h5>
+            </a>
+            <div class="row">
+              <div class="col">
+                <!--Descripción Noticia-->
+                <p class="card-text">Breve descripción de la noticia.
+                  Para leer la noticia completa se debe hacer click
+                  sobre el título</p>
+              </div>
+              <div class="col">
+                <!--Imagen-->
+                <img src="public/images/imagen.png" class="card-img-top" alt="imagen">
+              </div>
+            </div>
           </div>
-           <div class="box">
-            <a href=https://www.instagram.com/itbauniversidad><i class="bi bi-instagram h3" style="padding-right: 10px"></i></a><a
-              href=https://twitter.com/ITBA><i class="bi bi-twitter h3"></i></a>
+        </div>
+        <!--Tarjeta-->
+        <div class="card">
+          <div class="card-body">
+            <!--Título Tarjeta-->
+            <a href="#">
+              <h5 class="card-title">Noticia 3</h5>
+            </a>
+            <div class="row">
+              <div class="col">
+                <!--Descripción Noticia-->
+                <p class="card-text">Breve descripción de la noticia.
+                  Para leer la noticia completa se debe hacer click
+                  sobre el título</p>
+              </div>
+              <div class="col">
+                <!--Imagen-->
+                <img src="public/images/imagen.png" class="card-img-top" alt="imagen">
+              </div>
             </div>
-            <div class="box">
-              <a href=https://es-la.facebook.com/itbauniversidad><i class="bi bi-facebook h3" style="padding-right: 10px"></i></a><a
-              href=https://www.youtube.com/channel/UCk7TR5Oxi3h63uzCpG3rC6w><i class="bi bi-youtube h3"></i></a>
-            </div>
+          </div>
         </div>
       </div>
-    </footer>
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-  </body>
+    </div>
+
+
+
+  </main>
+
+  <!--  pie de página principal -->
+
+  <footer>
+    <div class="row footer">
+      <div class="col-sm-5 primera-columna-footer">
+        <div class="grid-header"> <img src="public/images/itbank-logo.png"> </div>
+        <div>San Martin 202, C1004AAB, Puerto Madero, Ciudad Autónoma de Buenos Aires</div>
+        <div>Abiertos de 10:00 a 15:00, de lunes a viernes</div>
+        <div>©Copyright 2050 de nadie. Todos los derechos revertidos</div>
+      </div>
+      <div class="col-sm-2">
+        <div>
+          <div class="grid-header">Servicio al cliente</div>
+          <div><a href="">FAQ</a></div>
+          <div><a href="">Ayuda</a></div>
+          <div><a href="">Trabajá con nosotros</a></div>
+          <div><a href="">Reportar errores</a></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="grid-header"><a href=""></a>Información</div>
+        <div class="text-and_link"><a href="">Términos y condiciones</a></div>
+        <div><a href="">Privacidad</a></div>
+        <div><a href="">Seguridad</a></div>
+        <div><a href="">Sobre nosotros</a></div>
+      </div>
+      <div class="col-sm-2">
+        <div class="grid-header">Formas de contacto</div>
+        <div class="box">
+          <!--agregar popover con el número de contacto y en mail en estas fotos-->
+          <a href=""><i class="bi bi-telephone h3" style="padding-right: 5px"></i></a>
+          <a href=""><i class="bi bi-envelope h3"></i></a>
+        </div>
+        <div class="box">
+          <a href=https://www.instagram.com/itbauniversidad><i class="bi bi-instagram h3"
+              style="padding-right: 10px"></i></a><a href=https://twitter.com/ITBA><i class="bi bi-twitter h3"></i></a>
+        </div>
+        <div class="box">
+          <a href=https://es-la.facebook.com/itbauniversidad><i class="bi bi-facebook h3"
+              style="padding-right: 10px"></i></a><a href=https://www.youtube.com/channel/UCk7TR5Oxi3h63uzCpG3rC6w><i
+              class="bi bi-youtube h3"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
