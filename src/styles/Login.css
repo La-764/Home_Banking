@@ -5,9 +5,22 @@ body {
 }
 
 .logo {
-  background-color: #fff;
-  display: flex;
-  align-items: center;
+  height: 70px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.logo > img {
+  width: 200px;
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    margin-bottom: 25px;
+  }
+  .logo > img {
+    width: 150px;
+  }
 }
 
 .title, .welcome-title {
