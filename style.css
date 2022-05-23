@@ -22,13 +22,26 @@ body{
     padding-top: 50px;
     justify-content: left;
 }
-Rochi{
+.Rochi{
     background-color: gainsboro;
-    display: flex;
-    justify-content:center
+    display: inline-block;
+    justify-content:center;
+    border: 1px solid black;
+    height: 60px;
+    width: auto;
+    text-align: center;
 }
-lauta{
-    background-color: gainsboro;
+.horizontal-scroll-contenedor {
+        margin: 4px, 4px;
+        padding: 4px;
+        width: auto;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+}
+
+.lauta{
+    background-color: rgb(8, 6, 6);
     display: flex;
 }
 .producto{
