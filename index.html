@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
-    <link rel="icon" href="public/images/logo.ico">
-    <link rel="stylesheet" href="style.css">
-    
-<title>ITBank</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+  <link rel="icon" href="public/images/logo.ico">
+  <link rel="stylesheet" href="style.css">
+  <title>ITBank</title>
 </head>
+
 <body>
     <!-- encabezado principal  -->
-
     <header class="my-3">
       <nav class="navbar fixed-top navbar-dark" style="background-color: #005689;">
         <div class="container-fluid">
@@ -30,6 +31,7 @@
             <a href="#"><i class="bi bi-bell icon-white h3" style="padding-right: 10px;"></i></a>
             <a href="#"><i class="bi bi-power icon-white h2"></i></a>
           </div>
+          <!--  Menu hambuerguesa -->
           <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel"
             style="background-color: #005689;">
             <div class="offcanvas-header">
@@ -39,16 +41,59 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house"></i> Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Administrar Cuenta</a>
+                  <a class="nav-link" href="#"><i class="bi bi-person"></i> Administrar Cuenta</a>
+                </li>                              
+                <li class="nav-item dropdown"> 
+                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-globe2"></i> Idioma
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                    <li><a class="dropdown-item" href="#">Español</a></li>
+                    <li><a class="dropdown-item" href="#">English</a></li>
+                    <li><a class="dropdown-item" href="#">Português</a></li>
+                    <li><a class="dropdown-item" href="#">Français</a></li>
+                    <li><a class="dropdown-item" href="#">Deutsch</a></li>                  
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-gear"></i> Accesibilidad
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                    <li><a class="dropdown-item disab" href="#">Modo Oscuro</a></li>
+                    <li>
+                      <div class="form-check form-switch ms-auto mt-3 me-3" style="padding-left: 4em; padding-bottom: 5px;">
+                        <label class="form-check-label ms-3" for="lightSwitch">
+                          <i class="bi bi-moon-fill"></i>
+                        </label>
+                        <input class="form-check-input" type="checkbox" id="lightSwitch" />
+                      </div>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item disab" href="#">Tamaño de Fuente</a></li>
+                    <li><label for="customRange1" class="form-label"></label>
+                      <input type="range" class="form-range" id="customRange1">
+                        <i class="bi bi-plus-slash-minus" style="padding-left:3px;"></i>
+                    </li>                   
+                  </ul>
+                </li>
+                <li class="nav-item dropdown"> 
+                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-question-circle"></i> Soporte
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                    <li><a class="dropdown-item" href="#">Preguntas Frecuentes</a></li>
+                    <li><a class="dropdown-item" href="#">Asistencia en Vivo</a></li>
+                    <li><a class="dropdown-item" href="#">Contacto Soporte</a></li>
+                  </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Soporte</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Cerrar Sesión</a>
+                  <a class="nav-link" href="#"><i class="bi bi-power"></i> Cerrar Sesión</a>
                 </li>
               </ul>
             </div>
@@ -56,49 +101,62 @@
         </div>
       </nav>    
     </header>
-    <!-- contenido principal de la pag -->
-  
-      <main>
-        
+  <!-- contenido principal de la pag -->
+
+  <main>
+    <div class="row p-3">
+      <div class="col-12 col-md-9">
         <div class="container">
           <h3 class="acceso_directos">ACCESOS DIRECTOS</h3>
           <Rochi>
             <button type="button" class="btn btn-primary">
               <p class="titulo">Transferencias</p>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z" />
               </svg>
             </button>
             <button type="button" class="btn btn-primary">
               <p class="titulo">Pago de Servicios</p>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wallet2" viewBox="0 0 16 16">
-                <path d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499L12.136.326zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484L5.562 3zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z"/>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wallet2"
+                viewBox="0 0 16 16">
+                <path
+                  d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499L12.136.326zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484L5.562 3zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z" />
               </svg>
             </button>
             <button type="button" class="btn btn-primary">
               <p class="titulo">Prastamos</p>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cash-coin" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0z"/>
-                <path d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1h-.003zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195l.054.012z"/>
-                <path d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083c.058-.344.145-.678.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1H1z"/>
-                <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 5.982 5.982 0 0 1 3.13-1.567z"/>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cash-coin"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0z" />
+                <path
+                  d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1h-.003zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195l.054.012z" />
+                <path
+                  d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083c.058-.344.145-.678.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1H1z" />
+                <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 5.982 5.982 0 0 1 3.13-1.567z" />
               </svg>
             </button>
             <button type="button" class="btn btn-primary">
               <p class="titulo">Seguros</p>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z" />
               </svg>
             </button>
             <button type="button" class="btn btn-primary">
               <p class="titulo">Turnos Online</p>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-check" viewBox="0 0 16 16">
-                <path d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
-                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-calendar-check" viewBox="0 0 16 16">
+                <path
+                  d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                <path
+                  d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
               </svg>
             </button>
           </Rochi>
- 
+
 
         </div>
         <h2 class="producto">TUS PRODUCTOS</h2>
@@ -106,72 +164,156 @@
           <div class="cont">
             <div class="row">
               <div class="col"><button class="btn">
-                <p class="titulo">Cuenta nºxxxxxxx</p>
-                <p>$0,00</p>
-                <p>U$s0,00</p>
+                  <p class="titulo">Cuenta nºxxxxxxx</p>
+                  <p>$0,00</p>
+                  <p>U$s0,00</p>
                 </button></div>
-                <div class="col"><button class="btn">
-                    <p class="titulo">Visa Crédito xxxx-1234</p>
-                    <p class="subt" > últimos consumos</p>
-                    <p>$0,00</p>
+              <div class="col"><button class="btn">
+                  <p class="titulo">Visa Crédito xxxx-1234</p>
+                  <p class="subt"> últimos consumos</p>
+                  <p>$0,00</p>
                 </button></div>
-                 <div class="col"><button class="btn">
-                        <p class="titulo">Visa Débito</p>
-                        <p class="subt">Ver movimientos</p>
-                  </button></div>    
-                  <div class="col"><button class="btn">
-                      <p class="titulo">Inversiones</p>
-                      <p class="subt">Tenencia consolidada</p>
-                  </button></div>
-                  <div class="col"><button class="btn">
-                      <p class="titulo">Autenticación</p>
-                      <p class="subt">Generar Token</p>
-                            </button></div>
-    </lauta>
-      
-
-    </main>
-
-    <!--  pie de página principal -->
-
-    <footer>
-      <div class="row footer">
-        <div class="col-sm-5 primera-columna-footer">
-          <div class="grid-header"> <img src="public/images/itbank-logo.png"> </div>
-          <div>San Martin 202, C1004AAB, Puerto Madero, Ciudad Autónoma de Buenos Aires</div>
-          <div>Abiertos de 10:00 a 15:00, de lunes a viernes</div>
-          <div>©Copyright 2050 de nadie. Todos los derechos revertidos</div>
-        </div>
-        <div class="col-sm-2">
-          <div>
-            <div class="grid-header">Servicio al cliente</div>
-            <div><a href="">FAQ</a></div>
-            <div><a href="">Ayuda</a></div>
-            <div><a href="">Trabajá con nosotros</a></div>
-            <div><a href="">Reportar errores</a></div>
+              <div class="col"><button class="btn">
+                  <p class="titulo">Visa Débito</p>
+                  <p class="subt">Ver movimientos</p>
+                </button></div>
+              <div class="col"><button class="btn">
+                  <p class="titulo">Inversiones</p>
+                  <p class="subt">Tenencia consolidada</p>
+                </button></div>
+              <div class="col"><button class="btn">
+                  <p class="titulo">Autenticación</p>
+                  <p class="subt">Generar Token</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </lauta>
+      </div>
+      <!--columna para sección noticias-->
+      <div class="col-12 col-md-3 noticias">
+        <!--Título-->
+        <h2>Noticias</h2>
+        <hr>
+        <!--Tarjeta-->
+        <div class="card">
+          <div class="card-body">
+            <!--Título Tarjeta-->
+            <a href="#">
+              <h5 class="card-title">Noticia 1</h5>
+            </a>
+            <div class="row">
+              <div class="col">
+                <!--Descripción Noticia-->
+                <p class="card-text">Breve descripción de la noticia.
+                  Para leer la noticia completa se debe hacer click
+                  sobre el título</p>
+              </div>
+              <div class="col">
+                <!--Imagen-->
+                <img src="public/images/imagen.png" class="card-img-top" alt="imagen">
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-sm-2">
-          <div class="grid-header"><a href=""></a>Información</div>
-          <div class="text-and_link"><a href="">Términos y condiciones</a></div>
-          <div><a href="">Privacidad</a></div>
-          <div><a href="">Seguridad</a></div>
-          <div><a href="">Sobre nosotros</a></div>
-        </div>
-        <div class="col-sm-2">
-          <div class="grid-header">Formas de contacto</div>
-          <div class="box">
-            <!--agregar popover con el número de contacto y en mail en estas fotos--> <a href=""><i class="bi bi-telephone h3" style="padding-right: 5px"></i></a> <a href=""><i class="bi bi-envelope h3"></i></a>
+        <!--Tarjeta-->
+        <div class="card">
+          <div class="card-body">
+            <!--Título Tarjeta-->
+            <a href="#">
+              <h5 class="card-title">Noticia 2</h5>
+            </a>
+            <div class="row">
+              <div class="col">
+                <!--Descripción Noticia-->
+                <p class="card-text">Breve descripción de la noticia.
+                  Para leer la noticia completa se debe hacer click
+                  sobre el título</p>
+              </div>
+              <div class="col">
+                <!--Imagen-->
+                <img src="public/images/imagen.png" class="card-img-top" alt="imagen">
+              </div>
+            </div>
           </div>
-          <div class="box"><a href=https://www.instagram.com/itbauniversidad><i class="bi bi-instagram h3" style="padding-right: 10px"></i></a><a
-              href=https://twitter.com/ITBA><i class="bi bi-twitter h3"></i></a></div>
-          <div class="box"><a href=https://es-la.facebook.com/itbauniversidad><i class="bi bi-facebook h3" style="padding-right: 10px"></i></a><a
-              href=https://www.youtube.com/channel/UCk7TR5Oxi3h63uzCpG3rC6w><i class="bi bi-youtube h3"></i></a></div>
+        </div>
+        <!--Tarjeta-->
+        <div class="card">
+          <div class="card-body">
+            <!--Título Tarjeta-->
+            <a href="#">
+              <h5 class="card-title">Noticia 3</h5>
+            </a>
+            <div class="row">
+              <div class="col">
+                <!--Descripción Noticia-->
+                <p class="card-text">Breve descripción de la noticia.
+                  Para leer la noticia completa se debe hacer click
+                  sobre el título</p>
+              </div>
+              <div class="col">
+                <!--Imagen-->
+                <img src="public/images/imagen.png" class="card-img-top" alt="imagen">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
-    <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-  </body>
-</html>
+    </div>
+
+
+
+  </main>
+
+  <!--  pie de página principal -->
+
+  <footer>
+    <div class="row footer">
+      <div class="col-sm-5 primera-columna-footer">
+        <div class="grid-header"> <img src="public/images/itbank-logo.png"> </div>
+        <div>San Martin 202, C1004AAB, Puerto Madero, Ciudad Autónoma de Buenos Aires</div>
+        <div>Abiertos de 10:00 a 15:00, de lunes a viernes</div>
+        <div>©Copyright 2050 de nadie. Todos los derechos revertidos</div>
+      </div>
+      <div class="col-sm-2">
+        <div>
+          <div class="grid-header">Servicio al cliente</div>
+          <div><a href="">FAQ</a></div>
+          <div><a href="">Ayuda</a></div>
+          <div><a href="">Trabajá con nosotros</a></div>
+          <div><a href="">Reportar errores</a></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="grid-header"><a href=""></a>Información</div>
+        <div class="text-and_link"><a href="">Términos y condiciones</a></div>
+        <div><a href="">Privacidad</a></div>
+        <div><a href="">Seguridad</a></div>
+        <div><a href="">Sobre nosotros</a></div>
+      </div>
+      <div class="col-sm-2">
+        <div class="grid-header">Formas de contacto</div>
+        <div class="box">
+          <!--agregar popover con el número de contacto y en mail en estas fotos-->
+          <a href=""><i class="bi bi-telephone h3" style="padding-right: 5px"></i></a>
+          <a href=""><i class="bi bi-envelope h3"></i></a>
+        </div>
+        <div class="box">
+          <a href=https://www.instagram.com/itbauniversidad><i class="bi bi-instagram h3"
+              style="padding-right: 10px"></i></a><a href=https://twitter.com/ITBA><i class="bi bi-twitter h3"></i></a>
+        </div>
+        <div class="box">
+          <a href=https://es-la.facebook.com/itbauniversidad><i class="bi bi-facebook h3"
+              style="padding-right: 10px"></i></a><a href=https://www.youtube.com/channel/UCk7TR5Oxi3h63uzCpG3rC6w><i
+              class="bi bi-youtube h3"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
