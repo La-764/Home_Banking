@@ -105,6 +105,7 @@ lauta{
     color: rgba(255, 255, 255, 0.87);
 }
 
+/*footer*/
 div.footer {
     padding-bottom: 40px;
     padding-left: 30px;
@@ -147,6 +148,45 @@ div.primera-columna-footer {
     height: 3em;
     padding: 3px;
 }
+
+/*Tarjetas dolar*/
+.dolar{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left:20px;
+    background-color: #005689;
+}
+
+.dolar .card-body{
+   padding: 11px;
+}
+
+.dolar .card-title{
+    text-align: center;
+    color:#fafafa;
+}
+
+.dolar .compra-venta{
+    background-color: #fafafa;
+}
+.dolar .card-text{
+    margin: 0px;
+}
+
+.dolar .precio{
+    margin-bottom: 10px;
+}
+
+.dolar .card-subtitle{
+    color:#fafafa;
+    background-color: #1464f6;
+}
+
+.dolar .fecha {
+    color:#fafafa;
+}
+
+/*offcanvas navbar*/
 
 #lightSwitch {
     transform: scale(1.8);

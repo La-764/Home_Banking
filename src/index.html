@@ -126,7 +126,7 @@
               </svg>
             </button>
             <button type="button" class="btn btn-primary">
-              <p class="titulo">Prastamos</p>
+              <p class="titulo">Prestamos</p>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cash-coin"
                 viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0z" />
@@ -189,7 +189,7 @@
             </div>
           </div>
         </lauta>
-      </div>
+      </div>   
       <!--columna para sección noticias-->
       <div class="col-12 col-md-3 noticias">
         <!--Título-->
@@ -259,12 +259,7 @@
           </div>
         </div>
       </div>
-    </div>
-
-
-
   </main>
-
   <!--  pie de página principal -->
 
   <footer>
@@ -310,10 +305,37 @@
       </div>
     </div>
   </footer>
+
+    <!--Template compra-venta-->
+    <div class="row">
+      <template>
+        <div class="col-sm-4">
+          <div class="card dolar">
+            <div class="card-body">
+              <h3 class="card-title">Dolar <!--Variar según dato--></h3>
+              <div class="row compra-venta">
+                  <!--Compra-->
+                   <div class="col-6">
+                      <p class="card-text">Compra</p>
+                      <h3 class="precio">$<!--Precio--></h3>
+                    </div>
+                    <!--Venta-->
+                    <div class="col-6">
+                      <p class="card-text">Venta</p>
+                      <h3 class="precio">$<!--Precio--></h3>
+                    </div>
+                <p class="card-subtitle">variación: <!--+/-numero%--></p>
+              </div>
+              <p class="card-text fecha">ACTUALIZADO: <!--fecha y hora--></p>
+            </div>
+          </div>
+        </div>
+      </template>
+    </div>
+
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
 </body>
-
 </html>
