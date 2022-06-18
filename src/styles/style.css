@@ -1,88 +1,62 @@
-body {
-    overflow-x: hidden;
+.principal {
+    margin-top: 5rem;
 }
 
 li {
-    display:inline;
+    display: inline;
 }
 
 h1 {
     text-align: center;
 }
+
 form {
     text-align: right;
 }
+
 .nav_prin {
     display: inline;
     text-align: center;
 }
 
-body{
-    background-color: rgb(126, 224, 231);
-    padding-top: 50px;
-    justify-content: left;
-}
-main{
-    width: 90%;
-    margin: 0 auto;
-}
-/* .Rochi{
-    background-color: gainsboro;
-    display: inline-block;
-    justify-content:center;
-    border: 1px solid black;
-    height: 60px;
-    width: auto;
-    text-align: center;
-}
-.horizontal-scroll-contenedor {
-        margin: 4px, 4px;
-        padding: 4px;
-        width: auto;
-        overflow-x: auto;
-        overflow-y: hidden;
-        white-space: nowrap;
-}
- */
-.producto{
+.producto {
     margin-top: 20px;
     color: rgb(73, 73, 73);
     font-weight: 600;
     font-size: 100%;
-    margin-left: 2px;
 }
-.titulo{
+
+.titulo {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     font-size: 17px;
 }
-.subt{
+
+.subt {
     font-family: Arial, Helvetica, sans-serif;
 }
-.cont{
-    justify-content: center;
-    margin: 10px;
-    padding: 10px;
-    
+
+.cont {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: .5rem;
 }
-.col .btn{
+
+.product-card {
     display: block;
-    width: 220px;
     height: 170px;
-    outline: none;
     border: 1px solid cornflowerblue;
     background-color: #fafafa;
     border-radius: 6px;
     color: rgb(0, 141, 235);
     cursor: pointer;
-    margin: 1px;
     transition: all .25s;
     z-index: 1;
     position: relative;
     text-align: center;
 }
 
-.col .btn:before{
+.product-card:before {
     content: '';
     position: absolute;
     width: 100%;
@@ -95,15 +69,14 @@ main{
     z-index: -1;
 }
 
-.col .btn:hover{
+.product-card:hover {
     border: 1px solid transparent;
     color: #fff;
 }
 
-.col .btn:hover:before{
+.product-card:hover:before {
     height: 100%;
 }
-
 
 .navbar-brand {
     transform: translateX(-50%);
@@ -120,22 +93,16 @@ main{
 }
 
 /*footer*/
-div.footer {
-    padding-bottom: 40px;
-    padding-left: 30px;
-    padding-top: 10px;
+.footer {
+    padding: 10px;
+    text-align: center;
 }
 
-div.primera-columna-footer {
+.primera-columna-footer {
     color: grey;
     font-style: italic;
 }
 
-@media screen and (max-width:576px){
-    div.footer{
-        text-align: center;
-    }
-}
 
 .grid-header {
     font-weight: bold;
@@ -147,15 +114,15 @@ div.primera-columna-footer {
 }
 
 .footer a {
-    color: black;
+    color: #333;
     text-decoration: none;
+    font-weight: 400;
 }
 
 .footer a:hover {
-    color: black;
-    text-decoration: none;
+    color: #000;
     text-shadow: 1px 2px 2px rgba(148, 148, 148, 0.573);
-    font-weight: 400;
+    text-decoration: underline;
 }
 
 .box img {
@@ -164,40 +131,41 @@ div.primera-columna-footer {
 }
 
 /*Tarjetas dolar*/
-.dolar{
+.dolar {
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left:20px;
+    margin-left: 20px;
     background-color: #005689;
 }
 
-.dolar .card-body{
-   padding: 11px;
+.dolar .card-body {
+    padding: 11px;
 }
 
-.dolar .card-title{
+.dolar .card-title {
     text-align: center;
-    color:#fafafa;
+    color: #fafafa;
 }
 
-.dolar .compra-venta{
+.dolar .compra-venta {
     background-color: #fafafa;
 }
-.dolar .card-text{
+
+.dolar .card-text {
     margin: 0px;
 }
 
-.dolar .precio{
+.dolar .precio {
     margin-bottom: 10px;
 }
 
-.dolar .card-subtitle{
-    color:#fafafa;
+.dolar .card-subtitle {
+    color: #fafafa;
     background-color: #1464f6;
 }
 
 .dolar .fecha {
-    color:#fafafa;
+    color: #fafafa;
 }
 
 /*offcanvas navbar*/
@@ -205,25 +173,21 @@ div.primera-columna-footer {
 #lightSwitch {
     transform: scale(1.8);
     height: 14px;
-    cursor: pointer;  
+    cursor: pointer;
 }
 
-#customRange1{
-    width:50% ;
+#customRange1 {
+    width: 50%;
     padding-top: 9px;
     padding-left: 8px;
 }
 
-.disab{
+.disab {
     pointer-events: none;
     cursor: default
 }
-/*Estilo Noticias*/
-.col-12{
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 20px;
-}
+
+
 .noticias {
     padding: 10px 8px 3px 8px;
     background-color: #dddddd;
@@ -231,41 +195,51 @@ div.primera-columna-footer {
     border-radius: 10px;
 
 }
+
 .noticias hr {
     color: #005689;
 }
-.noticias .card{
+
+.noticias .card {
     border-radius: 10px;
     border: 1px solid #1464f6;
     margin-bottom: 7px;
 }
+
 .noticias h2 {
     color: #44a2f8;
 }
+
 .noticias .card-body a {
     color: #44a2f8;
     text-decoration: none;
 }
+
 .noticias .card-body a:hover {
     color: #005689;
 }
+
 .noticias img {
     min-width: 130px;
     max-width: 200px;
-} 
+}
+
 /*LAUTA*/
-.nav{
+.nav {
     margin-left: 20px;
 }
-.tab-pane{
+
+.tab-pane {
     margin-bottom: 200px;
 }
-.btn2:hover{
+
+.btn2:hover {
     background-position: right;
     color: rgb(73, 73, 73);
     border: 3px solid rgb(22, 153, 214);
 }
-.btn2{
+
+.btn2 {
     display: grid;
     height: 80px;
     border: 3px solid rgb(255, 255, 255);
@@ -278,6 +252,6 @@ div.primera-columna-footer {
     cursor: pointer;
     color: #fff;
     background-size: 300%;
-    background-image: linear-gradient(to left, rgb(23, 228, 243), rgb(0, 141, 235), rgb(23, 228, 243));    
+    background-image: linear-gradient(to left, rgb(23, 228, 243), rgb(0, 141, 235), rgb(23, 228, 243));
     transition: 0.9s;
 }
