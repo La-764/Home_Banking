@@ -93,8 +93,9 @@ form {
 }
 
 /*footer*/
-.footer {
-    padding: 10px;
+footer {
+    border-top: 1px solid #e5e5e5;;    
+    padding: 20px;
     text-align: center;
 }
 
@@ -103,11 +104,9 @@ form {
     font-style: italic;
 }
 
-
 .grid-header {
     font-weight: bold;
 }
-
 
 .grid-header img {
     width: 12em;
@@ -187,13 +186,11 @@ form {
     cursor: default
 }
 
-
 .noticias {
     padding: 10px 8px 3px 8px;
     background-color: #dddddd;
     border: 1px solid #005689;
     border-radius: 10px;
-
 }
 
 .noticias hr {
@@ -230,7 +227,7 @@ form {
 }
 
 .tab-pane {
-    margin-bottom: 200px;
+    margin-bottom: 2rem;
 }
 
 .btn2:hover {
