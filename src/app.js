@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => fetchData());
-
+const dolar=document.getElementById('dolar')
 const fetchData = async () => {
   try {
     const res = await fetch(
@@ -11,3 +11,4 @@ const fetchData = async () => {
     console.log(error);
   }
 };
+
