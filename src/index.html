@@ -219,46 +219,10 @@
         </div>
         <div class="tab-pane " id="dolar" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
           <div class="container2">
-            <div class="row">
-              AQUI VA LA COTIZACIÓN DEL DÓLAR
-              <!--Template compra-venta-->
-              <div class="row">
+            <div class="row" id="cards-dolar">
+              <h2 class="producto">COTIZACIONES</h2>
+             <!-- AQUI VA LA COTIZACIÓN DEL DÓLAR -->
 
-                <template>
-                  <div class="col-sm-4">
-                    <div class="card dolar">
-                      <div class="card-body">
-                        <h3 class="card-title">Dolar
-                          <!--Variar según dato-->
-                        </h3>
-                        <div class="row compra-venta">
-                          <!--Compra-->
-                          <div class="col-6">
-                            <p class="card-text">Compra</p>
-                            <h3 class="precio">$
-                              <!--Precio-->
-                            </h3>
-                          </div>
-                          <!--Venta-->
-                          <div class="col-6">
-                            <p class="card-text">Venta</p>
-                            <h3 class="precio">$
-                              <!--Precio-->
-                            </h3>
-                          </div>
-                          <p class="card-subtitle">variación:
-                            <!--+/-numero%-->
-                          </p>
-                        </div>
-                        <p class="card-text fecha">ACTUALIZADO:
-                          <!--fecha y hora-->
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </template>
-
-              </div>
             </div>
           </div>
         </div>
@@ -385,7 +349,40 @@
       </div>
     </div>
   </footer>
-
+  <!--Template compra-venta-->
+  <template id="template">
+    <div class="col-sm-4">
+      <div class="card dolar">
+        <div class="card-body">
+          <h3 class="card-title">Dolar
+            <!--Variar según dato-->
+          </h3>
+          <div class="row compra-venta">
+            <!--Compra-->
+            <div class="col-6">
+              <p class="card-text">Compra</p>
+              <h3 class="precio compra">$
+                <!--Precio-->
+              </h3>
+            </div>
+            <!--Venta-->
+            <div class="col-6">
+              <p class="card-text">Venta</p>
+              <h3 class="precio venta">$
+                <!--Precio-->
+              </h3>
+            </div>
+            <p class="card-subtitle">variación:
+              <!--+/-numero%-->
+            </p>
+          </div>
+          <p class="card-text fecha">ACTUALIZADO:
+            <!--fecha y hora-->
+          </p>
+        </div>
+      </div>
+    </div>
+  </template>
   <!-- JavaScript Bundle with Popper -->
   <script src="app.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
