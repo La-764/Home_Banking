@@ -17,9 +17,7 @@ const fetchData = async () => {
 const pintarCards = data => {
   const fecha = new Date()
   let variacion
-  //  console.log(data);
   data.forEach(item => {
-    console.log(item)
     if(item.casa.variacion==undefined){
       variacion='no disponible'
     }
