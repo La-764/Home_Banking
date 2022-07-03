@@ -4,7 +4,7 @@ from operator import length_hint
 
 archivo = input("Ingrese nombre del archivo csv: ")
 filtrarDni = input("Ingrese DNI a filtrar: ")
-salida=input("Ingrese pantalla si desea  imprimir por “pantalla” todos los valores que se tienen y  “csv” si desea exportar a un csv").upper()
+salida=input("Ingrese pantalla si desea  imprimir por “pantalla” todos los valores que se tienen y  “csv” si desea exportar a un csv: ").upper()
 chequesFiltrados = []
 
 def crearCSV(nombre_archivo, dni):
@@ -18,6 +18,19 @@ def crearCSV(nombre_archivo, dni):
             csv.write(NumeroCuenta + "," + Valor + "," + FechaOrigen + "," + FechaPago + "\n")
             csv.close
     cheques.close()
+def error():
+    if len(chequesFiltrados) != len(set(chequesFiltrados)):
+        print("Erro: Existe más de un cheque con el mísmo número de cheque para esta cuenta")    
+def filtrarPorDni():
+    for i in range(0, len(documento)):
+        if documento[i] == filtrarDni:
+            chequesFiltrados.append(nro_cheque[i])
+            if salida == "PANTALLA":
+                print("DNI: " + documento[i] + "\n Tipo:" + tipo[i] + "\n Estado:" + estado[i])
+            elif salida == "CSV":
+                crearCSV(archivo, filtrarDni)
+    error()
+
 
 
 
@@ -31,20 +44,12 @@ with open(archivo, 'r', encoding='utf-8') as f:
         tipo = (name_records[line]['Tipo'])
         estado = (name_records[line]['Estado'])
     
+    
 
 
-print(name_records)
-print()
-print(name_records[0])
-print()
-print(name_records[0]['FechaPago'])
+filtrarPorDni()
 
+    
+        
 
-def filtrarPorDni():
-    for i in range(0, len(documento)):
-        if documento[i] == filtrarDni:
-            if salida == "PANTALLA":
-                print("DNI: " + documento[i] + "\n Tipo:" + tipo[i] + "\n Estado:" + estado[i])
-            elif salida == "CSV":
-                crearCSV(archivo, filtrarDni)
 
