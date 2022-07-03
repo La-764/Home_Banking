@@ -1,14 +1,17 @@
 import csv
-cheques=[]
+from operator import length_hint
 
-
+archivo = input("Ingrese nombre del archivo csv: ")
+filtrarDni = input("Ingrese DNI a filtrar: ")
+salida=input("Ingrese pantalla si desea  imprimir por “pantalla” todos los valores que se tienen y  “csv” si desea exportar a un csv").upper()
+chequesFiltrados = []
 def crearCSV():
     with open('ITBA_test.txt', 'w', encoding='utf-8') as cheques:
         pass
 
 
 
-with open('ITBA_test.txt', 'r', encoding='utf-8') as f:
+with open(archivo, 'r', encoding='utf-8') as f:
     csv_reader = csv.DictReader(f)
     name_records = list(csv_reader)
     ## extrae datos
@@ -17,12 +20,7 @@ with open('ITBA_test.txt', 'r', encoding='utf-8') as f:
         documento = (name_records[line]['DNI'])
         tipo = (name_records[line]['Tipo'])
         estado = (name_records[line]['Estado'])
-
-    salida=input("Ingrese pantalla si desea  imprimir por “pantalla” todos los valores que se tienen y  “csv” si desea exportar a un csv").upper()
-    if salida == "PANTALLA":
-            print("DNI: " + documento + "\n Tipo:" + tipo + "\n Estado:" + estado)
-    elif salida == "CSV":
-            crearCSV()
+    
 
 
 print(name_records)
@@ -32,12 +30,12 @@ print()
 print(name_records[0]['FechaPago'])
 
 
-for linea in f:
-    ## hacer verificación de nro de cheque (ID) con dni
-        DNI, Tipo, Estado = linea.rstrip("\n").split(",")
-        salida=input("Ingrese pantalla si desea  imprimir por “pantalla” todos los valores que se tienen y  “csv” si desea exportar a un csv").upper()
-        if salida == "PANTALLA":
-            print("DNI: " + DNI + "\n Tipo:" + Tipo + "\n Estado:" + Estado)
-        elif salida == "CSV":
-            crearCSV()
+def filtrarPorDni(filtrarDni):
+    
+    for i in range(0, lenght(documento)):
+        if documento[i] == filtrarDni:
+            if salida == "PANTALLA":
+                print("DNI: " + documento[i] + "\n Tipo:" + tipo[i] + "\n Estado:" + estado[i])
+            elif salida == "CSV":
+                crearCSV()
 
