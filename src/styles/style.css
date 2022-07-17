@@ -13,12 +13,22 @@ h1 {
 form {
     text-align: right;
 }
-
+a{
+    text-decoration: none;
+}
+.navbar{
+    background-image: linear-gradient(to right,rgb(0, 141, 235), rgb(23, 228, 243), rgb(0, 141, 235));
+}
 .nav_prin {
     display: inline;
     text-align: center;
 }
-
+.offcanvas {
+    background-color: #44a2f8;
+}
+.nav-link{
+    color: white;
+}
 .producto {
     margin-top: 20px;
     color: rgb(73, 73, 73);
@@ -30,6 +40,7 @@ form {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     font-size: 17px;
+    margin-top: 30px;
 }
 
 .subt {
@@ -134,7 +145,7 @@ footer {
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
-    background-color: #005689;
+    background-color: rgb(0, 141, 235);
 }
 
 .dolar .card-body {
@@ -160,7 +171,7 @@ footer {
 
 .dolar .card-subtitle {
     color: #fafafa;
-    background-color: #1464f6;
+    background-color: rgb(0, 0, 0);
 }
 
 .dolar .fecha {
@@ -191,6 +202,7 @@ footer {
     background-color: #dddddd;
     border: 1px solid #005689;
     border-radius: 10px;
+    margin-top: 30px;
 }
 
 .noticias hr {
@@ -232,7 +244,6 @@ footer {
 
 .btn2:hover {
     background-position: right;
-    color: rgb(73, 73, 73);
     border: 3px solid rgb(22, 153, 214);
 }
 
@@ -251,4 +262,120 @@ footer {
     background-size: 300%;
     background-image: linear-gradient(to left, rgb(23, 228, 243), rgb(0, 141, 235), rgb(23, 228, 243));
     transition: 0.9s;
+}
+
+/* css para transferencias */
+.conteinerTitulos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 85%;
+    margin: 30px;
+}
+.conteinerTitulos h3 {
+    width: 70%;
+    height: 50px;
+    color: rgb(51, 51, 51);
+    border: 2px rgba(0, 0, 0, 0.493) solid;
+    border-radius: 5px;
+    padding-left: 20px;
+    box-shadow:inset 2px 2px 4px rgba(120, 120, 120, .4), inset -3px -3px 3px rgba(255,255,255,.4);
+    overflow: hidden;
+    padding-top: 5px;
+}
+.btnConsultas {
+    background-color:  rgb(23, 228, 243);
+    width: 20%;
+    height: 50px;
+    margin-left: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.col{
+    background-color: rgba(209, 209, 209, 0.445);
+    border: 2px solid rgb(134, 134, 134);
+    border-radius: 6px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.d-grid { 
+    margin-top: 50px;
+}
+.btnNewTransferencia {
+    background-color:  rgb(23, 228, 243);
+    height: 50px;
+    margin-left: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    font-size: 20px;
+    font-weight: bold;
+}
+.list-group{
+    margin-top: 30px;
+    text-align: left;
+    font-size: 20px;
+}
+.list-group-item{
+    background-color: rgba(0, 0, 0, 0.041);
+}
+.btnTransferir{
+    background-color:#44a2f8;
+    border-radius: 6px;
+    width: 30%;
+    margin: 10px auto;
+    font-weight: 500;
+    
+}
+/* css para pago de servicios */
+.conteinerDivServicios{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 50px auto;
+}
+.conteinerServicios{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    text-align: center;
+    
+}
+.servicios{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 50px;
+    border: 2px solid #44a1f848;
+    border-radius: 150px;
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    color: #1464f6;
+    margin-left: 60px;
+}
+.servicios a{
+    font-size: 30px;
+    color: #44a2f8;
+}
+/* css para prestamos */
+.conteinerPrestamo{
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    background-color: #1464f6;
+    border-radius: 7px;
+    background-image: url(../../public/images/prestamo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.prestamo{
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    font-size: 40px;
+    color: #ffffff;
+}
+.imgPrestamo{
+    width: 20%;   
 }
