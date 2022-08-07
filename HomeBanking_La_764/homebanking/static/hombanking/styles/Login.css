@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  height: 70px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.logo > img {
+  width: 200px;
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    margin-bottom: 25px;
+  }
+  .logo > img {
+    width: 150px;
+  }
+}
+
+.title, .welcome-title {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  color: #005689;
+}
+
+.container-form {
+  background-color: #fff;
+  padding: 10px;
+}
+
+.container-input {
+  display: flex;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+input[type="text"], 
+input[type="password"], 
+input[type="number"] {
+  height: 20px;
+  border: none;
+  border-bottom: 1px solid #999;
+  margin-bottom:20px;
+  font-size: 16px;
+  width: 80%;
+  outline: none;
+}
+
+input[type="text"] :focus, 
+input[type="password"] :focus,
+input[type="number"] :focus {
+  border-bottom: 1px solid #005689;
+}
+
+input[type="submit"] {
+  background-color: #fff;
+  border: 1px solid #005689;
+  color: #333;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 25%;
+  transition: ease-in 200ms all;
+  font-weight: bold;
+}
+
+input[type="submit"]:hover {
+  background-color: #005689;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.lost-key-link {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 20px;
+}

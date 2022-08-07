@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?vzfw41');
+  src:  url('fonts/icomoon.eot?vzfw41#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?vzfw41') format('truetype'),
+    url('fonts/icomoon.woff?vzfw41') format('woff'),
+    url('fonts/icomoon.svg?vzfw41#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-settings_input_antenna:before {
+  content: "\e90a";
+}
+.icon-directions_subway:before {
+  content: "\e909";
+}
+.icon-phone1:before {
+  content: "\e908";
+}
+.icon-heart:before {
+  content: "\e90c";
+}
+.icon-car:before {
+  content: "\e90b";
+}
+.icon-lockedheart:before {
+  content: "\e906";
+}
+.icon-money-bag:before {
+  content: "\e904";
+}
+.icon-sack-dollar:before {
+  content: "\e904";
+}
+.icon-bag:before {
+  content: "\e904";
+}
+.icon-dollar:before {
+  content: "\e900";
+}
+.icon-bill:before {
+  content: "\e900";
+}
+.icon-money:before {
+  content: "\e900";
+}
+.icon-stack:before {
+  content: "\e900";
+}
+.icon-calendar:before {
+  content: "\e907";
+}
+.icon-transfer:before {
+  content: "\e901";
+}
+.icon-arrows:before {
+  content: "\e901";
+}
+.icon-home3:before {
+  content: "\e902";
+}
+.icon-library:before {
+  content: "\e921";
+}
+.icon-coin-dollar:before {
+  content: "\e93b";
+}
+.icon-credit-card:before {
+  content: "\e93f";
+}
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-bell:before {
+  content: "\e951";
+}
+.icon-bubble2:before {
+  content: "\e96e";
+}
+.icon-plus:before {
+  content: "\ea0a";
+}
+.icon-handshake-o:before {
+  content: "\e905";
+}
+.icon-line-chart:before {
+  content: "\e903";
+}
