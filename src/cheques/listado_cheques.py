@@ -11,6 +11,10 @@ nroCheque = []
 documento = []
 tipo = []
 estado = []
+numeroCuenta = []
+valor = []
+fechaOrigen = []
+fechaPago = []
 dt = datetime.now()
 ts = datetime.timestamp(dt)
 
@@ -18,14 +22,14 @@ ts = datetime.timestamp(dt)
 def crearCSV(dni, linea):
     nombreCSV = str(dni)+"_"+str(ts)+".csv"
 
-    NumeroCuenta = nameRecords[linea]['NumeroCuentaOrigen']
-    valor = nameRecords[linea]['Valor']
-    FechaOrigen = nameRecords[linea]['FechaOrigen']
-    FechaPago = nameRecords[linea]['FechaPago']
+    NumeroCuenta = numeroCuenta[linea]
+    Valor = valor[linea]
+    FechaOrigen = fechaOrigen[linea]
+    FechaPago = fechaPago[linea]
 
     csv = open(nombreCSV, "a")
     csv.write(documento[linea]+","+NumeroCuenta + "," +
-              valor + "," + FechaOrigen + "," + FechaPago + "\n")
+              Valor + "," + FechaOrigen + "," + FechaPago + "\n")
 
     csv.close()
 
@@ -53,12 +57,15 @@ def filtrarPorDni():
 
 with open(archivo, 'r', encoding='utf-8') as f:
     csvReader = csv.DictReader(f)
-    nameRecords = list(csvReader)
 
-    for line in range(0, len(nameRecords)):
-        nroCheque.append(nameRecords[line]['NroCheque'])
-        documento.append(nameRecords[line]['DNI'])
-        tipo.append(nameRecords[line]['Tipo'])
-        estado.append(nameRecords[line]['Estado'])
+    for item in csvReader:
+        nroCheque.append(item['NroCheque'])
+        documento.append(item['DNI'])
+        tipo.append(item['Tipo'])
+        estado.append(item['Estado'])
+        numeroCuenta.append(item['NumeroCuentaOrigen'])
+        valor.append(item['Valor'])
+        fechaOrigen.append(item['FechaOrigen'])
+        fechaPago.append(item['FechaPago'])
 
     filtrarPorDni()
