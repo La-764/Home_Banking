@@ -1,3 +1,13 @@
+###    Batch Processing por línea de comando    ###
+# Orden de los argumentos:
+
+# Nombre del archivo csv.
+# DNI del cliente donde se filtrarán.
+# Salida: PANTALLA o CSV
+# Tipo de cheque: EMITIDO o DEPOSITADO
+
+# Ej: python listado_cheques.py ITBA_test.txt 40998788 csv emitido
+
 import sys
 import csv
 from datetime import datetime
@@ -41,8 +51,8 @@ def filtrarPorDni():
             if documento[i] == sys.argv[2]:
                 chequesFiltrados.append(nroCheque[i])
                 if sys.argv[3].upper() == "PANTALLA":
-                    print("DNI: " + documento[i] + "\n Tipo:" +
-                    tipo[i] + "\n Estado:" + estado[i])
+                    print("DNI: " + documento[i] + "\n Tipo: " +
+                    tipo[i] + "\n Estado: " + estado[i])
                 if sys.argv[3].upper() == "CSV":
                     crearCSV(sys.argv[2], i)
         errorPorNumeroDeCheque()
